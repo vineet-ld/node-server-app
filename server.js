@@ -27,14 +27,14 @@ app.use((req, res, next) => {
 
 });
 
-app.use((req, res, next) => {
+/*app.use((req, res, next) => {
 
     res.render("maintenance.hbs", {
         pageTitle: "We are under Maintenance",
         message: "See you soon"
     });
 
-});
+});*/
 
 app.get("/", (req, res) => {
 
@@ -48,6 +48,12 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
     res.render("about.hbs", {
         pageTitle: "About Page"
+    });
+});
+
+app.get("/projects", (req, res) => {
+    res.render("projects.hbs", {
+        pageTitle: "Projectsabout.hbs Page"
     });
 });
 
